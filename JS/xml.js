@@ -1,7 +1,7 @@
 var Connect = new XMLHttpRequest();
   // Define which file to open and
   // send the request.
-  Connect.open("GET", "/XML/Text.xml", false);
+  Connect.open("GET", "../XML/Text.xml", false);
   Connect.setRequestHeader("Content-Type", "text/xml");
   Connect.send(null);
   // Place the response in an XML document.
@@ -16,10 +16,10 @@ var Connect = new XMLHttpRequest();
   console.log(info);
   console.log(TheDocument);
   console.log(stories);
+  xml=loadXMLDoc(`../XML/${"Text"}.xml`);
   var indent=document.getElementsByClassName("filler");
   var character_bio=document.querySelectorAll('.character_info p');
   console.log(character_bio);
-  console.log(indent);
 for(var i=0;i<paragrafs.length;i++){
 	indent[i].innerHTML= paragrafs[i].textContent.toString();
 }
