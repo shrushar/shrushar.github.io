@@ -1,5 +1,5 @@
 var xmlContent ='';
-var 
+var about=document.getElementsByClassName("about");
 fetch('/XML/Text.xml').then((response)=>{
   response.text().then((xml)=>{
     var parser =new DOMParser();
@@ -8,7 +8,6 @@ fetch('/XML/Text.xml').then((response)=>{
     var paragrafs =info.querySelectorAll('paragraf');
     console.log(paragrafs);
   });
-  var about=document.getElementsByClassName("about");
   about.array.forEach(element => {
     var indent =document.createElement('p');
     indent.innerText = element.children[1].innerHTML;
