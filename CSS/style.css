@@ -1,10 +1,10 @@
 @font-face {
     font-family: Roboto; /* Имя шрифта */
-    src: url(fonts/Roboto/Roboto-Light.ttf); 
+    src: url(/fonts/Roboto/Roboto-Light.ttf); 
    }
 @font-face{
     font-family: Raleway;
-    src: url(fonts/static/Raleway-Regular.ttf);
+    src: url(/fonts/static/Raleway-Regular.ttf);
 }
 body{
     margin: 0;
@@ -131,7 +131,7 @@ main{
     background-size: cover;
     filter: blur(3.5px);
     -webkit-filter: blur(3.5px);
-    background-image: url(images/Street_sub.png);
+    background-image: url(/images/Street_sub.png);
     opacity: 1;
     
 }
@@ -466,7 +466,7 @@ footer p{
     min-height: 50%;
     max-height: 100%;
     right: 2vw;
-    background-image: url(images/BookMockup.png);
+    background-image: url(/images/BookMockup.png);
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
