@@ -2,10 +2,14 @@ var xmlContent ='';
 fetch('/XML/Text.xml').then((response)=>{
   response.text().then((xml)=>{
     var parser =new DOMParser();
-    var xmlDOM=parser.parseFromString(xmlContent,'application/xml');
-    console.log(xmlDOM);
+    var info=parser.parseFromString(xmlContent,'application/xml');
+    console.log(info);
+    var paragrafs =info.querySelectorAll('paragraf');
+    console.log(paragrafs);
   });
+  
 });
+
 // var Connect = new XMLHttpRequest();
 //   // Define which file to open and
 //   // send the request.
