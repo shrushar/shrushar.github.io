@@ -19,6 +19,7 @@ var Connect = new XMLHttpRequest();
   var indent=document.getElementsByClassName("filler");
   var character_bio=document.querySelectorAll('.character_info p');
   console.log(character_bio);
+  console.log(indent);
 for(var i=0;i<paragrafs.length;i++){
 	indent[i].innerHTML= paragrafs[i].textContent.toString();
 }
