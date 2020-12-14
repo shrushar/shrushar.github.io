@@ -1,28 +1,29 @@
-<html>
+<html lang="en">
     
     <head>
         <title>
             MiZivuariWebArt
         </title>
-        <link rel="icon" type="images/png" href="images/Icon.png">
-        <link href="CSS/style.css" rel="stylesheet">
-        <link href="CSS/aos.css" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <script src="JS/xml.js"></script>
+        <link rel="icon" type="images/png" href="images/Icon.png"><!-- иконка -->
+        <link href="CSS/style.css" rel="stylesheet"><!-- стилевое оформление документа -->
+        <link href="CSS/aos.css" rel="stylesheet"><!-- стилевое оформление подключенной библиотеки -->
+        <meta charset="UTF-8"><!-- кодировка -->
+        <meta name="viewport" content="width=device-width"><!-- поддержка мобильной версии -->
+        
     </head>
     <body>
+        <!-- приветственный блок -->
         <header>
             <div class="Menu">
-                <ul><!-- меню якорей для разделов-->
+                <ul><!-- меню якорей для разделов сайта-->
                 <li><a href="#about">About</a></li>
                 <li> <a href="#story">Story</a> </li>
                 <li> <a href="#characters">Characters</a></li>
                 <li> <a href="#buy">Buy</a></li>
             </ul>
             </div>
-             
-             <div id="mainCover">
+             <!-- Фоновая картинка с лого автора в svg-формате-->
+             <div id="mainCover"> 
                 <svg data-aos="fade-up" data-aos-delay="600" id="logo" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="119.323mm" height="8.8011mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                     viewBox="0 0 12189 899"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -42,8 +43,9 @@
             </div> 
         </header>
         <main>
+        
             <a name="about">
-            
+            <!-- ознакомительный блок -->
            <div class="about">
             <h1 class="section _anim-items _anim-hide"> About</h1>
                <p class="filler"></p>
@@ -52,13 +54,10 @@
                
             </div>
             </a>
+            <!-- меню выбора маленькой истории для чтения со смненной фоновой картинки -->
             <a name="story">
                 <h1 class="section _anim-items _anim-hide"> Story</h1>
                 <div class="story_wrapper" data-aos="fade-up">
-    
-                    <!-- <img alt="" src="http://www.userinterfaceicons.com/80x80/minimize.png" id="imgClickAndChange" onclick="changeImage()" /> -->
-                    <!-- <img alt="" src="images/Street_sub.png" class="story_background" /> -->
-                  
                        <div class="story_background" ></div>
 					<div class="story_menu">
                         <div class="story_button _anim-items" style="background-image: url(images/theRoom.png)" onclick="changeBackground(0)" 
@@ -92,7 +91,7 @@
                     </div>
                 </div>
             </a>
-           
+           <!-- слайдер персонажей -->
              <a name="characters">
                 <h1 class="section _anim-items _anim-hide"> characters</h1>
                 <div class="characters_wrapper">
@@ -139,6 +138,7 @@
                             <p></p>
                         </div>
                     </div>
+                    <!-- указатели слайдера -->
                     <a class="prev _anim-items _anim-hide" onclick="plusSlides(-1)">&#10094;</a>
 				    <a class="next _anim-items _anim-hide" onclick="plusSlides(1)">&#10095;</a> 
 				 <br>
@@ -151,6 +151,7 @@
                 
                 
             </a> 
+            <!-- Раздел покупки и оформления заказа  -->
             <a name="buy">
                 <h1 class="section _anim-items _anim-hide"> explore</h1>
                 <div class="buy_background">
@@ -173,13 +174,14 @@
                                 data-aos-duration="800">&#10095;</a></li>
                         </ul>
                         <ul>
-                            <li class="product">Sighed art-book</li>
-                            <li class="product">Exstra-chapters</li>
+                            <li class="product">Signed artbook</li>
+                            <li class="product">Extra-chapters</li>
                             <li class="product">Bestiary</li>
                             <li class="product">Secret gift-merch</li>
                         </ul>
                         <ul>
-                            <li >
+                            <!-- кнопка ведущая на саму форму заказа -->
+                            <li > 
                                <a onclick="ShowBuyerForm()"><div class="buy_button" data-aos="flip-right" >buy</div></a>
                             </li>
                         </ul>
@@ -194,13 +196,25 @@
             <p></p>
             <p></p>
             <p></p>
+            <div id="qooi-counter">
+                <a href="http://qooi.ru/" title="Бесплатный счетчик посещений на сайт">
+                <img src="http://qooi.ru/counter/standard/009.png" alt="Счетчик посещаемости и статистика сайта">
+                <div id="qooi-counter-visits"></div>
+                <div id="qooi-counter-views"></div>
+                </a>
+                </div>
+                <script type="text/javascript" src="http://qooi.ru/counter.js"></script>
         </footer> 
 
     </body>
+    <!-- форма заказа -->
     <div class="buyer_form_background"></div>
     <div class="buyer_form_container">
             <!-- В дальнейшем эту форму можно будет связать с сервером -->
-            <form>
+            <!-- <form action="mailto:someone@example.com" method="post" enctype="text/plain">-->
+            <!-- в данном случае данная функция была не подключена, чтобы не получить кучу спама -->
+            
+            <form> 
                 <ul>Make an order
                     <li>
                         <label>
@@ -240,11 +254,12 @@
                 
             </form>
             <div class="product_book">
-                <!-- <img src="images/BookMockup.png"> -->
             </div>
     </div>
    
-    <script src="JS/aos.js"></script>
-    <script src="JS/anime.min.js"></script>
-    <script src="JS/script.js"></script> 
+    <script src="JS/xml.js"></script> <!-- подключение файла загрузки xml -->
+    <script src="JS/aos.js"></script><!-- библиотека скролловых анимаций -->
+    <script src="JS/anime.min.js"></script><!-- библиотека анимаций  -->
+    <script src="JS/script.js"></script>
+    
 </html>
