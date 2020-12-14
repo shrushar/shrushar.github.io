@@ -1,1 +1,0 @@
-# shrushar.github.io
