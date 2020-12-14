@@ -60,7 +60,7 @@ header{
     min-height: 600px;
     background: black;
     display: block;
-    background-image: url('../images/Cover.png');
+    background-image: url(/images/Cover.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 55% 50%;
@@ -131,7 +131,7 @@ main{
     background-size: cover;
     filter: blur(3.5px);
     -webkit-filter: blur(3.5px);
-    background-image: url("..images\Street_sub.png");
+    background-image: url(images/Street_sub.png);
     opacity: 1;
     
 }
@@ -338,7 +338,7 @@ main{
     height: 100%;
     width: 100%;
     background-color: whitesmoke;
-    background-image: url(\images\Cover_light_1.png);
+    background-image: url(/images/Cover_light_1.png);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: 50% 50%;
@@ -392,7 +392,7 @@ main{
 }
 .buy_book{
     position: absolute;
-    background-image: url(\images\Book.png);
+    background-image: url(/images/Book.png);
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
@@ -466,7 +466,7 @@ footer p{
     min-height: 50%;
     max-height: 100%;
     right: 2vw;
-    background-image: url(images\BookMockup.png);
+    background-image: url(images/BookMockup.png);
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
