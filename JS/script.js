@@ -22,7 +22,7 @@ AOS.init({
 	anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   
   });
-
+const animItems=document.querySelectorAll('._anim-items');
 if(animItems.length>0) //функция работающая по событию скролла для анимации заголовков при пролистывании,
 //в дальнейшем для остальных элементов будем пользоваться библиотекой AOS 
 {
