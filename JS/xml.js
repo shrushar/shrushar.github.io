@@ -16,7 +16,6 @@ var Connect = new XMLHttpRequest();
   console.log(info);
   console.log(TheDocument);
   console.log(stories);
-  //xml=loadXMLDoc(`/XML/${"Text"}.xml`);
   var indent=document.getElementsByClassName("filler");
   var character_bio=document.querySelectorAll('.character_info p');
   console.log(character_bio);
