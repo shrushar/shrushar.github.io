@@ -96,7 +96,7 @@ buttons.forEach((buttons, index) => {
 function changeBackground(s){
 	var imageUrl = ["url(images/theRoom.png)",
 	 "url(images/Street_sub.png)",
-	 "url(images/3_booty_bitches.png)",
+	 "url(images/3girls.png)",
 	 "url(images/IMG_9789.jpg)"
 	];
 	var elements = document.getElementsByClassName("story_background")
