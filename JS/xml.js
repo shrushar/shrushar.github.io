@@ -8,7 +8,7 @@ fetch('/XML/Text.xml').then((response)=>{
     var paragrafs =info.querySelectorAll('paragraf');
     console.log(paragrafs);
   });
-  for(var i=0;i<paragrafs.length;i++) {
+  for(var i=0;i<4;i++) {
     var indent =document.createElement('p');
     indent.innerHTML= paragrafs[i].textContent.toString();
     about.appendChild(indent);
