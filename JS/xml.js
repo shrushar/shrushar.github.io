@@ -8,11 +8,11 @@ fetch('/XML/Text.xml').then((response)=>{
     var paragrafs =info.querySelectorAll('paragraf');
     console.log(paragrafs);
   });
-  about.array.forEach(element => {
+  for(var i;i<paragrafs.length;i++) {
     var indent =document.createElement('p');
-    indent.innerText = element.children[1].innerHTML;
-    about.appendChild(p);
-  });
+    indent.innerHTML= paragrafs[i].textContent.toString();
+    about.appendChild(indent);
+  }
 });
 
 // var Connect = new XMLHttpRequest();
@@ -38,7 +38,7 @@ fetch('/XML/Text.xml').then((response)=>{
 //   var character_bio=document.querySelectorAll('.character_info p');
 //   console.log(character_bio);
 // for(var i=0;i<paragrafs.length;i++){
-// 	indent[i].innerHTML= paragrafs[i].textContent.toString();
+// 	
 // }
 // for(var i=0;i<bio.length;i++){
 // 	character_bio[i].innerHTML=bio[i].textContent.toString();
