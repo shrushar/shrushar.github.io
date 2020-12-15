@@ -447,7 +447,7 @@ footer p{
     flex-basis: (50%,0);
     flex-wrap: wrap;
     width: 60%;
-    min-height: 400px;
+    min-height: 500px;
     border-radius: 10px;
     background-color: rgb(227,227,227);
     position: fixed;
