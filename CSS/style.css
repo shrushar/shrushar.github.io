@@ -527,7 +527,7 @@ span{
     }
 }
 /* адаптив для мобильных устройств и планшетов */
-@media  only screen and (max-width:374px)
+@media  only screen and (max-width:414px)
 {
     .character_body{
         max-height: unset;
