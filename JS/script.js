@@ -110,7 +110,7 @@ function changeBackground(s){
 		
 	});
 	function f(){
-		for (var i = 0; i < elements.length; i++) {
+		for (var i = 0; i < story.length; i++) {
 			elements[i].style.backgroundImage=imageUrl[s];
 			stories_tell[i].innerHTML=stories[s].textContent.toString();
 		}  
@@ -346,3 +346,4 @@ function createDrops(){
 
   }
 setInterval(createDrops, 1500);
+
