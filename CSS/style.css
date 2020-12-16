@@ -444,7 +444,9 @@ footer p{
 }
 .buyer_form_container{
     z-index: 99999999;
+    -ms-flex-preferred-size: (50%,0);
     flex-basis: (50%,0);
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 60%;
     min-height: 500px;
