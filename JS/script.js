@@ -111,7 +111,7 @@ function changeBackground(s){
 	});
 	function f(){
 		for (var i = 0; i < story.length; i++) {
-			elements[i].style.backgroundImage=imageUrl[s];
+			sstory[i].style.backgroundImage=imageUrl[s];
 			stories_tell[i].innerHTML=stories[s].textContent.toString();
 		}  
 	}
