@@ -1,4 +1,3 @@
-//SCROLLING ANIMATION
 
 AOS.init({
 	// Global settings:
@@ -59,6 +58,7 @@ if(animItems.length>0) //функция работающая по событию
 	}
 	animOnScroll();
 }
+//анимация историй
 var story=document.querySelectorAll('.story_background');
 var buttons=document.querySelectorAll('.story_button');
 buttons.forEach((buttons, index) => {
@@ -84,7 +84,7 @@ buttons.forEach((buttons, index) => {
 	});
 	buttons.addEventListener("scroll",k=>{
 		anime({
-			targets: card,
+			targets: k,
 			scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
 			rotateY: {value: '+=180', delay: 200},
 			easing: 'easeInOutSine',
@@ -94,15 +94,14 @@ buttons.forEach((buttons, index) => {
 });
 });
 function changeBackground(s){
-	var imageUrl = ["url(images/theRoom.png)",
-	 "url(images/Street_sub.png)",
-	 "url(images/3girls.png)",
+	var imageUrl = ["url(images/theRoom.jpg)",
+	 "url(images/Street_sub.jpg)",
+	 "url(images/3girls.jpg)",
 	 "url(images/IMG_9789.jpg)"
 	];
-	var elements = document.getElementsByClassName("story_background")
 	var stories_tell=document.getElementsByClassName("story_tell");
 	anime({
-		targets:[elements, stories_tell],
+		targets:[story, stories_tell],
 		autoplay:true,
 		opacity:[
 			{ value: 0, easing: "easeOutSine", duration: 600 },
@@ -119,6 +118,7 @@ function changeBackground(s){
 	setTimeout(f,600);
 	
 }
+//слайдер персонажей
 var slideIndex=1;
 function plusSlides(n){
 	animateInnerObjects();
@@ -155,6 +155,7 @@ function handleTabletChange(e){
 		characterInfo.style.width="250px";
 	}
 }
+//функция анимаций элементов слайдера
 function animateInnerObjects(){
 	var characterBackground =document.getElementsByClassName("character_background");
 	var characterBody=document.getElementsByClassName("character_body");
@@ -211,7 +212,7 @@ function animateInnerObjects(){
 		}
 	);
 }
-
+//слайдер выбора пакетов
 showSlides(slideIndex);
 function wordAnimation(){
 	var slides = document.getElementsByClassName("word_slider");
@@ -269,6 +270,9 @@ function showSlidesWord(n) {
 	}
 	
   }
+  //анимация появления формы заказа
+  var bueyrFormBackground=document.getElementsByClassName("buyer_form_background");
+  var buyerFormContainer=document.getElementsByClassName("buyer_form_container");
   function fadeForm(){
 	anime({
 		targets:bueyrFormBackground,
@@ -285,8 +289,7 @@ function showSlidesWord(n) {
 	}
 	setTimeout(fade,600);
   }
-  var bueyrFormBackground=document.getElementsByClassName("buyer_form_background");
-  var buyerFormContainer=document.getElementsByClassName("buyer_form_container");
+  //события для выхода из формы
   document.onkeydown=function(evt){
 	  evt=evt||window.Event;
 	  var isEscape=false;
@@ -324,6 +327,7 @@ function showSlidesWord(n) {
 		  buyerFormContainer[i].style.display="flex";
 	  }
   }
+  //функция создания капель
 function createDrops(){
 	  const section=document.querySelector('.section_for_drops');
 	  const drop=document.createElement('span');
@@ -342,29 +346,3 @@ function createDrops(){
 
   }
 setInterval(createDrops, 1500);
-function loadXMLDoc(filename)
-{
-if (window.ActiveXObject)
-  {
-  xhttp = new ActiveXObject("Msxml2.XMLHTTP");
-  }
-else 
-  {
-  xhttp = new XMLHttpRequest();
-  }
-xhttp.open("GET", filename, false);
-try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
-xhttp.send("");
-return xhttp.responseXML;
-}
-
-// console.log(xml);
-// console.log(xml.getElementsByTagName("paragraf")[0]);
-// var str=xml.getElementsByTagName("paragraf")[i];
-// console.log(xml.transformNode);
-// var indent=document.getElementsByClassName("filler");
-// for(var i=0; i<3 ;i++)
-// {
-	
-// 	indent[i].innerHTML=xml.getElementsByTagName("paragraf")[i].chilNodes[i];
-// }

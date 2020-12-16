@@ -60,7 +60,7 @@ header{
     min-height: 600px;
     background: black;
     display: block;
-    background-image: url(/images/Cover.png);
+    background-image: url(/images/Cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 55% 50%;
@@ -131,7 +131,7 @@ main{
     background-size: cover;
     filter: blur(3.5px);
     -webkit-filter: blur(3.5px);
-    background-image: url(/images/Street_sub.png);
+    background-image: url(/images/Street_sub.jpg);
     opacity: 1;
     
 }
@@ -466,7 +466,7 @@ footer p{
     min-height: 50%;
     max-height: 100%;
     right: 2vw;
-    background-image: url(/images/BookMockup.png);
+    background-image: url(/images/BookMockup.jpg);
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
